@@ -1,0 +1,23 @@
+queue = []
+
+def enqueue(item):
+    queue.append(item)
+
+def dequeue():
+    if isEmpty():
+        print("Empty queue")
+    else:
+        queue.pop(0)
+
+def isEmpty():
+    if len(queue) == 0:
+        return True
+    else :
+        return False
+
+def peek():
+    if isEmpty():
+        print("Empty queue")
+    else:
+        print(queue[0])
+
