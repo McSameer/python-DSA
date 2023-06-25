@@ -1,0 +1,23 @@
+stack = []
+print(stack)
+
+def push(item):
+    stack.append(item)
+
+def pop():
+    if isEmpty():
+        print("Empty stack")
+    else:
+        stack.pop()
+
+def peek():
+    if isEmpty():
+        print("Empty stack")
+    else:
+        print(stack[-1])
+
+def isEmpty():
+    if len(stack) == 0:
+        return True
+    else :
+        return False
